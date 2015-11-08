@@ -8,7 +8,7 @@ branches:
   - production
 install:
 - pip install pip wheel -U
-- pip install pelican ghp-import markdown
+- pip install -r requirements.txt
 script:
 - make publish github
 env:

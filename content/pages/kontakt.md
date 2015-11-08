@@ -1,5 +1,5 @@
 Title: Kontakt
-Slug: Kontakt
+Slug: kontakt
 
 E-mail: biuro@pilnujemy.info
 

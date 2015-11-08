@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+import os
 
 AUTHOR = u'Adam Dobrawy'
 SITENAME = u'Fundacja Pilnujemy.info'
@@ -19,7 +20,7 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-DISPLAY_PAGES_ON_MENU = False
+DISPLAY_PAGES_ON_MENU = True
 
 # Blogroll
 LINKS = (('Aktualności', '/'),
@@ -29,5 +30,12 @@ LINKS = (('Aktualności', '/'),
 
 DEFAULT_PAGINATION = 10
 
+PLUGIN_PATHS = ["plugins", ]
+PLUGINS = ["post_revision.post_revision"]
 # STATIC_PATHS = ['images', 'extra/CNAME']
 # EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
+
+
+GITHUB_URL = "https://github.com/pilnujemy/pilnujemy.github.io"
+GITHUB_BRANCH = "production"
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
