@@ -1,3 +1,4 @@
 [submodule "plugins/post_revision"]
 	path = plugins/post_revision
 	url = https://github.com/pilnujemy/pelican.plugins.post_revision.git
+	branch = master
