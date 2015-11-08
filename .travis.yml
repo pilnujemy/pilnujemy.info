@@ -5,7 +5,7 @@ cache:
 
 branches:
   only:
-  - master
+  - production
 install:
 - pip install pip wheel -U
 - pip install pelican ghp-import markdown
