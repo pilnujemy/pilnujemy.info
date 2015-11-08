@@ -6,7 +6,7 @@
 		<meta charset="utf-8" />
 		<link rel="profile" href="http://gmpg.org/xfn/11" />
 		<link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/style.css" />
-		<link rel='stylesheet' id='oswald-css'  href='http://fonts.googleapis.com/css?family=Oswald&#038;ver=3.3.2' type='text/css' media='all' />
+		<link rel='stylesheet' id='oswald-css'  href='http://fonts.googleapis.com/css?family=Oswald&#038;ver=3.3.2&amp;subset=latin-ext' type='text/css' media='all' />
 		<style type="text/css">
 			body.custom-background { background-color: #f5f5f5; }
 		</style>
@@ -39,16 +39,16 @@
 						<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="{{ link }}">{{ title }}</a></li>
 					{% endfor %}
 					  {% for p in PAGES %}
-						<li{% if p == page %} class="active"{% endif %} class="menu-item menu-item-type-post_type menu-item-object-page"><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+						<li class="{% if p == page %}active {% endif %}menu-item menu-item-type-post_type menu-item-object-page"><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
 					  {% endfor %}
 					{% if DISPLAY_CATEGORIES_ON_MENU %}
 					  {% for cat, null in categories %}
-						<li{% if cat == category %} class="active"{% endif %} class="menu-item menu-item-type-post_type menu-item-object-page"><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+						<li class="{% if cat == category %}active {% endif %}menu-item menu-item-type-post_type menu-item-object-page"><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
 					  {% endfor %}
 					{% endif %}
 					{% if LINKS %}
 					  {% for name, url in LINKS %}
-						<li  class="active" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="{{ url }}">{{ name }}</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="{{ url }}">{{ name }}</a></li>
 					  {% endfor %}
 					{% endif %}
 
@@ -66,7 +66,7 @@
 		</div>
 		
 		<div id="footer">
-			<p>{{ FOOTER_TEXT or 'Powered by <a href="http://getpelican.com">Pelican</a>, theme by <a href="http://bunnyman.info">tBunnyMan</a>.' }}</p>
+			<p>Powered by <a href="http://getpelican.com">Pelican</a>, theme &amp; code at <a href="https://github.com/pilnujemy/pilnujemy.github.io">GitHub</a></p>
 			{% if GOOGLE_ANALYTICS %}
 				<script type="text/javascript">
 					var _gaq = _gaq || [];

@@ -2,10 +2,10 @@
 	<div class="entry-meta">
 		<div class="date"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.locale_date }}</a></div>
 		{% if article.author and not SINGLE_AUTHOR %}
-		<span class="byline">By <a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a></span>
+		<span class="byline">Przez <a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a></span>
 		{% endif %}
 		{% if DISQUS_SITENAME %}
-			<div class="comments"><a href="{{ SITEURL }}/{{ article.url }}#disqus_thread" title="Comment on {{ article.title|striptags }}">comments</a></div>
+			<div class="comments"><a href="{{ SITEURL }}/{{ article.url }}#disqus_thread" title="Comment on {{ article.title|striptags }}">komentarze</a></div>
 		{% endif %}
 		{% if article.author_gravatar %}
 		<span><a href="{{ SITEURL }}/{{ article.author.url }}"><img src="{{ article.author_gravatar }}" alt="{{ article.author }}"></img></a></span>
@@ -22,7 +22,7 @@
 			{{ article.content }}
 		</div> <!--/#entry-content-->
 		{% if article.tags %}
-    		<span class="tag-links"><strong>Tagged</strong>
+    		<span class="tag-links"><strong>Tagi</strong>: 
     			{% set delimiter = joiner() %}
     			{% for tag in article.tags|sort %}{{- delimiter() }} <a href="{{ SITEURL }}/{{ tag.url }}" rel="tag">{{ tag }}</a>{% endfor %}
     		</span>
