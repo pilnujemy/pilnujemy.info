@@ -14,13 +14,11 @@ TIMEZONE = 'Europe/Warsaw'
 DEFAULT_LANG = u'pl'
 
 # Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
-CATEGORY_FEED_ATOM = None
-TRANSLATION_FEED_ATOM = None
-AUTHOR_FEED_ATOM = None
-AUTHOR_FEED_RSS = None
+FEED_DOMAIN = SITEURL
 
-DISPLAY_PAGES_ON_MENU = True
+DISPLAY_PAGES_ON_MENU = False
+DISPLAY_CATEGORIES_ON_MENU = False
+DISPLAY_CATEGORIES_ON_POST = True
 
 # Blogroll
 LINKS = (('Aktualności', '/'),
