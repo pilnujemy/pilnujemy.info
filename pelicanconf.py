@@ -5,7 +5,7 @@ import os
 
 AUTHOR = u'Adam Dobrawy'
 SITENAME = u'Fundacja Pilnujemy.info'
-SITEURL = 'http://pilnujemy.info'
+SITEURL = 'localhost'
 THEME = 'theme'
 PATH = 'content'
 
@@ -29,10 +29,9 @@ LINKS = (('Aktualności', '/'),
 DEFAULT_PAGINATION = 10
 
 PLUGIN_PATHS = ["plugins", ]
-PLUGINS = ["post_revision.post_revision"]
+PLUGINS = ["post_revision.post_revision", "pin_to_top"]
 # STATIC_PATHS = ['images', 'extra/CNAME']
 # EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
-
 
 GITHUB_URL = "https://github.com/pilnujemy/pilnujemy.github.io"
 GITHUB_BRANCH = "production"
