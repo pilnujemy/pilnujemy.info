@@ -25,7 +25,7 @@
     		<span class="meta-links"><strong>Tagi</strong>: 
     			{% set delimiter = joiner() %}
     			{% for tag in article.tags|sort %}{{- delimiter() }} <a href="{{ SITEURL }}/{{ tag.url }}" rel="tag">{{ tag }}</a>{% endfor %} |
-    			<strong><a href="{{ article.github_history_url }}">Dziennik zmian</a></strong>
+    			<a href="{{ article.github_history_url }}">Dziennik zmian</a>
     		</span>
     	{% endif %}
 	</div> <!--/#main-->
