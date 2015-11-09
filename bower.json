@@ -1,0 +1,19 @@
+{
+  "name": "pilnujemy.github.io",
+  "description": "Kod źródłowy strony internetowej Fundacji Pilnujemy.info.",
+  "main": "index.js",
+  "authors": [
+    "Dzakus <Dzakus13@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/pilnujemy/pilnujemy.github.io",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "name": "pilnujemy.github.io",
+  "version": "1.0.0",
+  "description": "Kod źródłowy strony internetowej Fundacji Pilnujemy.info.",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp build",
+    "gulp": "gulp",
+    "postinstall": "bower install && gulp build",
+    "watch": "gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pilnujemy/pilnujemy.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pilnujemy/pilnujemy.github.io/issues"
+  },
+  "homepage": "https://github.com/pilnujemy/pilnujemy.github.io#readme",
+  "devDependencies": {
+    "bower": "^1.6.5",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^2.0.5",
+    "gulp-uglify": "^1.4.2"
+  }
+}

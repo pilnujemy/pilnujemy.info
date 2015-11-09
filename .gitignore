@@ -2,3 +2,5 @@ output
 *.pyc
 pelican.pid
 srv.pid
+node_modules/
+.sass-cache/
