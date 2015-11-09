@@ -16,4 +16,4 @@ make html
 ```
 ## Uruchamianie ##
 
-W celach rozwoju strony warto wykonać ```develop_server.sh start``` które uruchamia serwer deweloperski Pelican na porcie 8000 i umożliwia bieżący podgląd zmienianych treści.
+W celach rozwoju strony warto wykonać ```./develop_server.sh start``` które uruchamia serwer deweloperski Pelican na porcie 8000 i umożliwia bieżący podgląd zmienianych treści.
