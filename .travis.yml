@@ -7,6 +7,7 @@ branches:
   only:
   - production
 install:
+- npm install
 - pip install pip wheel -U
 - pip install -r requirements.txt
 script:
