@@ -6,6 +6,14 @@ cache:
 branches:
   only:
   - production
+
+addons:
+  apt:
+    packages:
+    - nodejs
+    - gulp
+    - npm
+
 install:
 - npm install
 - pip install pip wheel -U

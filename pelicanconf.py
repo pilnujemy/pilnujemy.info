@@ -29,7 +29,7 @@ LINKS = (('Aktualności', '/'),
 DEFAULT_PAGINATION = 10
 
 PLUGIN_PATHS = ["plugins", ]
-PLUGINS = ["post_revision.post_revision", "pin_to_top"]
+PLUGINS = ["post_revision.post_revision", "pin_to_top", "sitemap", "neighbors"]
 # STATIC_PATHS = ['images', 'extra/CNAME']
 # EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
 
