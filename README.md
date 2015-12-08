@@ -14,6 +14,7 @@ Do zbudowania strony należy:
 git submodule init
 git submodule update --recursive
 pip install -r requirements.txt
+npm install
 make html
 ```
 ## Uruchamianie ##
