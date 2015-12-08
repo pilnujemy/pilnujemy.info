@@ -19,6 +19,7 @@ addons:
 
 install:
 - gem install sass
+- nvm ls-remote
 - nvm install 12.0
 - nvm use 12.0
 - npm install
