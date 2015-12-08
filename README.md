@@ -1,6 +1,6 @@
 # pilnujemy.github.io
 
-https://travis-ci.org/pilnujemy/pilnujemy.github.io.svg?branch=production
+[![Build Status](https://travis-ci.org/pilnujemy/pilnujemy.github.io.svg?branch=production)](https://travis-ci.org/pilnujemy/pilnujemy.github.io)
 
 Kod źródłowy strony internetowej Fundacji Pilnujemy.info. 
 
