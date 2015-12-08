@@ -21,7 +21,7 @@ addons:
 install:
 - gem install sass
 - npm install
-- virtualenv -p python2.7 env
+- /usr/local/bin/virtualenv -p python2.7 env
 - source env/bin/activate
 - pip install pip wheel -U
 - pip install -r requirements.txt
