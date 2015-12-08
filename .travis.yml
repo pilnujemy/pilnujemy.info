@@ -1,4 +1,4 @@
-language: node_js
+language: python
 node_js:
   - "0.12"
 
@@ -16,13 +16,10 @@ addons:
     - nodejs
     - gulp
     - npm
-    - virtualenv
 
 install:
 - gem install sass
 - npm install
-- /usr/local/bin/virtualenv -p python2.7 env
-- source env/bin/activate
 - pip install pip wheel -U
 - pip install -r requirements.txt
 script:
