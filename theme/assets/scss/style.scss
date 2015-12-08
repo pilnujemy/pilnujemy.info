@@ -1,5 +1,9 @@
 $brand-color: #65AC4F;
+$media-medium-up: "only screen and (min-width: 992px)";
 
+*{
+	box-sizing: border-box;
+}
 /* =Base
 ----------------------------------------------- */
 body {
@@ -16,12 +20,15 @@ body {
 	height: auto;
 	margin: 0 auto;
 	width: 800px;
+	max-width: 100%;
 }
 #contents {
-	border-left: 1px solid #ccc;
 	height: auto;
-	margin-left: 199px;
 	padding-bottom: 10px;
+	@media #{$media-medium-up}{
+		margin-left: 199px;
+		border-left: 1px solid #ccc;
+	}
 }
 
 
@@ -30,42 +37,23 @@ body {
 #header {
 	min-height: 180px;
 	padding:{
-		top: 35px;
-		bottom: 35px;
+		top: 15px;
+		bottom: 15px;
 	};
-	width: 800px;
+	width: 100%;
 	display: flex;
 	align-items: center;
-}
-#header-logo{
-	width: 200px;
-	img{
-		max-width: 100%;
-		height: auto;
+	@media #{$media-medium-up}{
+		padding:{
+			top: 35px;
+			bottom: 35px;
+		};
 	}
 }
-
-#header-title {
-	color: $brand-color;
-	font-weight: bold;
-	font-size: 70px;
-	margin: 0px;
-	text-transform: uppercase;
-	text-rendering: optimizeLegibility;
-	font-family: Arial;
-	body.wf-active &{
-		font-family: 'Fira Mono', Arial;
-	}
-	a {
-		color: inherit;
-		letter-spacing: 1px;
-		text-decoration: none;
-		&:hover {
-			color: darken($brand-color, 10%);
-		}
-	}
+#header-banner{
+	width: 100%;
+	height: auto;
 }
-
 /* =Menu
 ----------------------------------------------- */
 #menu {
@@ -74,7 +62,7 @@ body {
 	margin-bottom: 25px;
 	padding: 10px;
 	text-align: right;
-	width: 800px;
+	width: 100%;
 }
 #menu img {
 	margin-bottom: 10px;
@@ -171,19 +159,44 @@ body {
 	border-bottom: 1px dashed #ddd;
 	float: left;
 	line-height: 175%;
-	padding: 29px 5px 15px 15px;
+	padding: {
+		top: 29px; 
+		right: 15px; 
+		bottom:15px; 
+		left: 15px
+	};
 	text-align: left;
-	width: 580px;
+	width: 100%;
+	@media #{$media-medium-up}{
+		padding: {
+			right: 15px;
+		};
+	}
 }
 .hentry .entry-meta {
 	font-family: 'Oswald', Helvetica, Arial, sans-serif;
 	font-size: 25px;
-	float: left;
-	margin: 35px 0 0 -199px;
-	padding: 0px;
+	margin: {
+		top: 35px;
+		right: 0;
+		bottom: 0; 
+		left: 0;
+	};
+	padding: {
+		right: 15px; 
+		left: 15px;
+	}
 	text-align: right;
 	text-transform: uppercase;
-	width: 190px;
+	@media #{$media-medium-up}{
+		float: left;
+		width: 190px;
+		margin-left: -199px;
+		padding: {
+			right: 0; 
+			left: 0;
+		}
+	}
 }
 .hentry .entry-meta a {
 	text-decoration: none;
@@ -259,6 +272,12 @@ blockquote {
 	font-family: Georgia, Arial, Helvetica, sans-serif;
 	font-size: 15px;
 	padding: 10px;
+	margin: {
+		top: 15px;
+		right: 20px;
+		bottom: 15px;
+		left: 40px;
+	}
 	text-align: justify;
 }
 a {
@@ -484,7 +503,7 @@ img.alignright {
 	margin: 50px 0 30px;
 	padding-top: 25px;
 	text-align: center;
-	width: 800px;
+	width: 100%;
 }
 #footer a {
 	color: #65AC4F;
