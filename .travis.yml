@@ -5,6 +5,7 @@ node_js:
 cache:
   directories:
     - $HOME/.cache/pip
+    - $HOME/node_modules/
 
 branches:
   except:
