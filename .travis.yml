@@ -19,6 +19,8 @@ addons:
 
 install:
 - gem install sass
+- nvm install 12.0
+- nvm use 12.0
 - npm install
 - pip install pip wheel -U
 - pip install -r requirements.txt
