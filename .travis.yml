@@ -16,6 +16,7 @@ addons:
     - nodejs
     - gulp
     - npm
+    - virtualenv
 
 install:
 - gem install sass
