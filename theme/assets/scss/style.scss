@@ -47,12 +47,15 @@ body {
 
 #header-title {
 	color: $brand-color;
-	font-family: 'Fira Mono', Arial;
 	font-weight: bold;
 	font-size: 70px;
 	margin: 0px;
 	text-transform: uppercase;
 	text-rendering: optimizeLegibility;
+	font-family: Arial;
+	body.wf-active &{
+		font-family: 'Fira Mono', Arial;
+	}
 	a {
 		color: inherit;
 		letter-spacing: 1px;
