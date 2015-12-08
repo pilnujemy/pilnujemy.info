@@ -6,17 +6,24 @@
 		<meta charset="utf-8" />
 		<link rel="profile" href="http://gmpg.org/xfn/11" />
 		<link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/style.css" />
-		<link rel='stylesheet' id='oswald-css'  href='http://fonts.googleapis.com/css?family=Oswald&#038;ver=3.3.2&amp;subset=latin-ext' type='text/css' media='all' />
 		<style type="text/css">
 			body.custom-background { background-color: #f5f5f5; }
 		</style>
+		<script>
+			WebFontConfig = {
+				google: {
+					families: ['Oswald:400:latin-ext', 'Fira Mono:400,700:latin'],
+				}
+			};
+			!function(){var t=document.createElement("script");t.src=("https:"==document.location.protocol?"https":"http")+"://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js",t.type="text/javascript",t.async="true";var e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)}();
+		</script>
 		<link rel="alternate" type="application/atom+xml"
 			title="{{ SITENAME }} — Flux Atom"
 			href="{{ SITEURL }}/{{ FEED }}" /> 
 		{% if FEED_RSS %}
 		<link rel ="alternate" type="application/rss+xml"
 			title="{{ SITENAME }} — Flux RSS"
-			href="{{ SITEURL }}/{{ FEED_RSS }}" /> 
+			href="{{ SITEURL }}/{{ FEED_RSS }}" />
 		{% endif %}
 		<!--[if lte IE 8]><script src="{{ SITEURL }}/theme/js/html5shiv.js"></script><![endif]-->
 		{% if MINT %}
@@ -28,8 +35,10 @@
 <body class="home blog custom-background {% if SINGLE_AUTHOR %}single-author{% endif %}" >
 	<div id="container">
 		<div id="header">
-				<h1 id="site-title"><a href="{{ SITEURL }}">{{ SITENAME }}</a></h1>
-				{% if SITESUBTITLE %}<h2 id="site-description">{{ SITESUBTITLE }}</h2>{% endif %}
+				<div id="header-logo">
+					<img src="{{ SITEURL }}/theme/images/logo.svg" alt="">
+				</div>
+				<h1 id="header-title"><a href="{{ SITEURL }}">{{ SITENAME }}</a></h1>
 		</div><!-- /#banner -->
 		
 		<div id="menu">

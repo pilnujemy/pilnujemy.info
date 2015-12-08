@@ -1,3 +1,5 @@
+$brand-color: #65AC4F;
+
 /* =Base
 ----------------------------------------------- */
 body {
@@ -15,11 +17,6 @@ body {
 	margin: 0 auto;
 	width: 800px;
 }
-#header {
-	min-height: 180px;
-	padding-top: 70px;
-	width: 800px;
-}
 #contents {
 	border-left: 1px solid #ccc;
 	height: auto;
@@ -30,39 +27,40 @@ body {
 
 /* =Header
 ----------------------------------------------- */
-#site-title {
-	color: #000;
-	font-family: 'Oswald', Helvetica, Arial, sans-serif;
+#header {
+	min-height: 180px;
+	padding:{
+		top: 35px;
+		bottom: 35px;
+	};
+	width: 800px;
+	display: flex;
+	align-items: center;
+}
+#header-logo{
+	width: 200px;
+	img{
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+#header-title {
+	color: $brand-color;
+	font-family: 'Fira Mono', Arial;
 	font-weight: bold;
-	font-size: 80px;
+	font-size: 70px;
 	margin: 0px;
 	text-transform: uppercase;
 	text-rendering: optimizeLegibility;
-}
-#site-title a {
-	color: #000;
-	letter-spacing: 1px;
-	text-decoration: none;
-}
-#site-title a:hover {
-	color: #36bcab;
-}
-#site-description {
-	background: #f1f1f1;
-	background-image: -webkit-linear-gradient( #f8f8f8, #eee);
-	background-image: -moz-linear-gradient( #f8f8f8, #eee);
-	border-radius: 3px;
-	color: #666;
-	display: inline-block;
-	font-size: 14px;
-	font-weight: 300;
-	margin-top: 0;
-	margin-bottom: 50px;
-	padding: 6px 10px;
-}
-#menu #header-image a {
-	margin: 0;
-	padding: 0;
+	a {
+		color: inherit;
+		letter-spacing: 1px;
+		text-decoration: none;
+		&:hover {
+			color: darken($brand-color, 10%);
+		}
+	}
 }
 
 /* =Menu
@@ -196,13 +194,13 @@ body {
 	margin: 0px;
 }
 .hentry .entry-meta .comments {
-	color: #36bcab;
+	color: #65AC4F;
 	display: block;
 	font-size: 16px;
 	margin: -4px 0 0;
 }
 .hentry .entry-meta .comments a {
-	color: #36bcab;
+	color: #65AC4F;
 	font-size: 22px;
 	font-weight: bold;
 	text-decoration: none;
@@ -217,7 +215,7 @@ body {
 	color: #777;
 }
 .hentry .entry-meta .cat-links a:hover {
-	color: #36bcab;
+	color: #65AC4F;
 }
 .hentry .entry-meta .edit-link a {
 	font-size: 16px;
@@ -253,7 +251,7 @@ body {
 }
 blockquote {
 	background: #eee;
-	border-left: 10px solid #36bcab;
+	border-left: 10px solid #65AC4F;
 	color: #000;
 	font-family: Georgia, Arial, Helvetica, sans-serif;
 	font-size: 15px;
@@ -265,7 +263,7 @@ a {
 	text-decoration: underline;
 }
 a:hover {
-	color: #36bcab;
+	color: #65AC4F;
 }
 .entry-content a img {
 	border: 10px solid #ddd;
@@ -307,7 +305,7 @@ b, strong {
 	background: #f5f5f5;
 }
 .page-link a {
-	background: #36bcab;
+	background: #65AC4F;
 	border-radius: 26px;
 	color: #000;
 	font-weight: normal;
@@ -426,20 +424,8 @@ a img {
 }
 p img {
 	margin-bottom: 0.5em; /* a small bottom margin prevents content floating under images */
-}
-/*
-Resize images to fit the main content area.
-- Applies only to images uploaded via WordPress by targeting size-* classes.
-- Other images will be left alone. Use "size-auto" class to apply to other images.
-*/
-img.size-auto,
-img.size-full,
-img.size-large,
-img.size-medium,
-.attachment img,
-.widget-area img {
-	max-width: 100%; /* When images are too wide for containing element, force them to fit. */
-	height: auto; /* Override height to match resized width for correct aspect ratio. */
+	max-width: 100%;
+	height: auto;
 }
 img.alignleft {
 	margin-right: 1em;
@@ -498,7 +484,7 @@ img.alignright {
 	width: 800px;
 }
 #footer a {
-	color: #36bcab;
+	color: #65AC4F;
 	text-decoration: none;
 }
 
