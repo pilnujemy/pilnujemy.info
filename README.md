@@ -1,5 +1,7 @@
 # pilnujemy.github.io
 
+[![Build Status](https://travis-ci.org/pilnujemy/pilnujemy.github.io.svg?branch=production)](https://travis-ci.org/pilnujemy/pilnujemy.github.io)
+
 Kod źródłowy strony internetowej Fundacji Pilnujemy.info. 
 
 Do budowy strony wykorzystano generator stron statycznych [Pelican](http://getpelican.com/).

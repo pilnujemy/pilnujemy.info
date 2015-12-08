@@ -1,11 +1,15 @@
 language: python
+node_js:
+  - "0.12"
+
 cache:
   directories:
     - $HOME/.cache/pip
+    - node_modules
 
 branches:
-  only:
-  - production
+  except:
+  - master
 
 addons:
   apt:
@@ -15,11 +19,14 @@ addons:
     - npm
 
 install:
+- gem install sass
+- nvm install "v0.12.9"
+- nvm use "v0.12.9"
 - npm install
 - pip install pip wheel -U
 - pip install -r requirements.txt
 script:
-- make publish github
+- bash -c "if [ $TRAVIS_BRANCH == 'production' ]; then make publish github; else make html; fi";
 env:
   secure: "QIDGlYcWkoIjakSCNUZKcj8Kx2eFHJLXR5eMFlUX0a7XuSk8y+osdkj3kl2Yi/i64OTrT3wYODQJuaHvdEBVSX3PdamyntTUd2ncZeyG3pD4yjJYc4PYynWz0YGn1NVPfU5vDdfk1WEkLnsFQP/slUGeZwbjpZ4sPUV+9gM4B1KwnXyRO/BmJH+EWdm7AZWdvwjwfHP4abCO3vEvFZHspGDeuPRdRcm6nUHWWzvF4mzmbnglWCsVZy5clzMLCzm32BF8m0zFJnqTrsK/YqiF/ujCxqAuGR4bDVIUspzojE4YW988xZFYNOOSHveew+0T4e3jUXSTi/8RhOsN1YeYBrzOxXbpfhR6D5IGc1WJQn1r2veXxt9+Dk/hUoSUhZMDiKWY+BXJqXa6VYCpe7P3px8Tz2NmQXbiX0LYOeYlnx7lwKDMpadS/HOUzwHTy8KYZOhSGmF/tYeblXSyvvY0N54jyP2spOpuCwTrVLARNMqMRNH3RW1fYn11fCpPLocnRsEXgXIE2BwtjFnt8qb3870IFO5MbFyQO5Zkb4nkweaghSISJchLKkM5gDpBwBS8BeX39mKgh8V/+eQ9Cnr1QcbQAW6rRfmTFjY5ooeLmZM/Kno93xX1p1mA+t7JQGuTguSX9WJNe5taMCLY4xj63SrES1xGEzhMA9I8smgTIZk="
 post_install: 

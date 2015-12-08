@@ -62,7 +62,7 @@ gulp.task("scss", function () {
         {
             style: "expanded",
             loadPath: config.scss.include,
-            sourcemap: true
+            sourcemap: false
         }
     )
         .pipe(gulpp.autoprefixer("last 1 version", "> 1%", "ie 8", "ie 7"))
