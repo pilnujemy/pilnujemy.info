@@ -26,6 +26,7 @@ install:
 - pip install pip wheel -U
 - pip install -r requirements.txt
 script:
+- bash -c "export"
 - bash -c "echo \"$TRAVIS_BRANCH\""
 - bash -c "if [ \"$TRAVIS_BRANCH\" == \"production\" ]; then echo 'Publish'; make publish github; else echo 'Regenerate only'; make html; fi";
 env:
