@@ -11,7 +11,8 @@ PATH = 'content'
 
 TIMEZONE = 'Europe/Warsaw'
 
-DEFAULT_LANG = u'pl'
+DEFAULT_LANG = 'pl'
+LOCALE = ('pl_PL', 'pl_PL.UTF-8')
 
 # Feed generation is usually not desired when developing
 FEED_DOMAIN = SITEURL

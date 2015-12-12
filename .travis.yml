@@ -19,6 +19,7 @@ addons:
     - npm
 
 install:
+- locale -a
 - gem install sass
 - nvm install "v0.12.9"
 - nvm use "v0.12.9"
