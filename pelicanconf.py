@@ -31,7 +31,7 @@ DEFAULT_PAGINATION = 10
 
 PLUGIN_PATHS = ["plugins", ]
 PLUGINS = ["post_revision.post_revision", "pin_to_top", "sitemap", "neighbors"]
-STATIC_PATHS = ['images', 'extra/CNAME']
+STATIC_PATHS = ['favicons', 'images', 'extra/CNAME']
 # EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
 
 GITHUB_URL = "https://github.com/pilnujemy/pilnujemy.github.io"
