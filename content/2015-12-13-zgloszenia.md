@@ -1,13 +1,13 @@
 Title: Uruchomienie systemu "Zgłoszenia"
 Tags: organizacja, dev, zgłoszenia, php
 
-Dostrzegamy jak istotna jest dla prawidłowego funkcjonowania Fundacji sprawna obsługa wpływających wiadomości. Wymaga to wielu czynności - przyjęcie wiadomości, przydział jej do konkretnych osób, a także - w razie potrzeby - dozór, identyfikacja osoby odpowiedzialnej i odtworzenie przebiegu obsługi wiadomości. To część strategii i filozofii, gdzie stały kontakt i zadowolenie klienta jest kluczową wartością. 
+Dostrzegamy jak istotna jest dla prawidłowego funkcjonowania Fundacji sprawna obsługa wpływających do Fundacji wiadomości. Wymaga to wielu czynności - przyjęcie wiadomości, przydziału jej do konkretnych osób, a także - w razie potrzeby - dozoru, identyfikacja osoby odpowiedzialnej i odtworzenie przebiegu obsługi wiadomości. To część strategii i filozofii, gdzie stały kontakt i zadowolenie klienta jest kluczową wartością. 
 
-Z tego względu wdrożyliśmy system do obsługi przysyłanych wiadomości e-mail. Każda e-mail wpływający na ogólny adres Stowarzyszenia jest w nim rejestrowana, tworzona jest sprawa, osoba otrzymuje unikalny identyfikator sprawy i potwierdzenie jej rejestracji:
+Z tego względu wdrożyliśmy system do obsługi przysyłanych wiadomości e-mail. Każdy e-mail wpływający na ogólny adres Stowarzyszenia jest w nim rejestrowany, tworzona jest sprawa, a w automatycznej odpowiedzi osoba otrzymuje unikalny identyfikator sprawy i potwierdzenie jej rejestracji:
 
 ![Przykładowe potwierdzenie rejestracji sprawy](http://cdn.files.jawne.info.pl/public_html/2015/12/13_02:05:26/Zaznaczenie_152.png#md5sum=c665d4d54fbeff8f101f06db3d4617a1)
 
-W dalszym ciągu możliwe skontaktowanie się z współpracowikami poprzez indywidualne adresy e-mail. Nie gwarantuje to jednak - w takim samym stopniu - odpowiedzi ze względu na mniejszy nadzoru.
+W dalszym ciągu możliwe skontaktowanie się z współpracowikami Fundacji poprzez indywidualne adresy e-mail. Nie gwarantuje to jednak - w takim samym stopniu - odpowiedzi ze względu na mniejszy nadzór.
 
 Co istotne, na podstawie adresu e-mail i numeru sprawy klient może zapoznać się na stronie [zgloszenia.pilnujemy.info](http://zgloszenia.pilnujemy.info) z tym kto aktualnie zajmuje się sprawą i prześledzić jej historię. W przyszłości będzie możliwe ustalenie w w jakim departamencie jest ona obsługiwana.
 
