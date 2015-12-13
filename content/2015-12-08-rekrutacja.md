@@ -1,7 +1,6 @@
 Title: Test systemu "Pytamy"
 Date: 2015-12-08
-Category: pytamy
-Tags: swiecka-szkola
+Tags: swiecka-szkola, pytamy
 Author: Adam Dobrawy
 
 W celu skutecznej realizacji praktyki otwartości zdecydowaliśmy o stworzeniu systemu "Pytamy". Oprogramowanie osiągnęło poziom rozwoju w którym wymaga testów w rzeczywistym środowisku. 

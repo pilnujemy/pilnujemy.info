@@ -19,7 +19,7 @@ FEED_DOMAIN = SITEURL
 
 DISPLAY_PAGES_ON_MENU = False
 DISPLAY_CATEGORIES_ON_MENU = False
-DISPLAY_CATEGORIES_ON_POST = True
+DISPLAY_CATEGORIES_ON_POST = False
 
 # Blogroll
 LINKS = (('Aktualności', '/'),
@@ -32,15 +32,15 @@ DEFAULT_PAGINATION = 10
 PLUGIN_PATHS = ["plugins", ]
 PLUGINS = ["post_revision.post_revision", "pin_to_top", "sitemap", "neighbors"]
 STATIC_PATHS = ['extra/favicons',
-		'images',
-		'extra/CNAME']
+                'images',
+                'extra/CNAME']
 EXTRA_PATH_METADATA = {
                         'extra/favicons/': {'path': 'favicons'},
-			'extra/CNAME': {'path': 'CNAME'},
-			'extra/favicons/favicon.ico': {'path': 'favicon.ico'},
-			'extra/favicons/manifest.json': {'path': 'manifest.json'},
-			'extra/favicons/browserconfig.xml':{'path': 'browserconfig.xml'},
-			}
+                        'extra/CNAME': {'path': 'CNAME'},
+                        'extra/favicons/favicon.ico': {'path': 'favicon.ico'},
+                        'extra/favicons/manifest.json': {'path': 'manifest.json'},
+                        'extra/favicons/browserconfig.xml': {'path': 'browserconfig.xml'},
+                    }
 
 GITHUB_URL = "https://github.com/pilnujemy/pilnujemy.github.io"
 GITHUB_BRANCH = "production"

@@ -1,7 +1,6 @@
 Title: Projekt Pytamy
 Date: 2014-11-08 16:24
-Category: pytamy
-Tags: python, django, dev
+Tags: python, django, dev, pytamy
 Author: Adam Dobrawy
 
 Podczas tworzenia Fundacji założyliśmy, że jej praca będzie - w miarę możliwości - transparentna i publikować jak najszerszy zakres przetwarzany przez Fundację informacji. Chcemy dać przykład dla innych podmiotów nie działających w celu osiągniecia zysku, że jest to możliwe.
