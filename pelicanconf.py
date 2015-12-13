@@ -39,6 +39,7 @@ EXTRA_PATH_METADATA = {
 			'extra/CNAME': {'path': 'CNAME'},
 			'extra/favicons/favicon.ico': {'path': 'favicon.ico'},
 			'extra/favicons/manifest.json': {'path': 'manifest.json'},
+			'extra/favicons/browserconfig.xml':{'path': 'browserconfig.xml'},
 			}
 
 GITHUB_URL = "https://github.com/pilnujemy/pilnujemy.github.io"
