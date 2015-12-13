@@ -22,10 +22,11 @@ DISPLAY_CATEGORIES_ON_MENU = False
 DISPLAY_CATEGORIES_ON_POST = False
 
 # Blogroll
-LINKS = (('Aktualności', '/'),
-         ('Statut', '/pages/statut.html'),
-         ('Kontakt', '/pages/kontakt.html'),
-         ('GitHub', 'https://github.com/pilnujemy'),)
+LINKS = (('Kontakt', '/pages/kontakt.html'),
+         ('GitHub', 'https://github.com/pilnujemy'),
+         ('O nas', '/pages/o-nas.html'),
+         ('Aktualności', '/'),
+         )
 
 DEFAULT_PAGINATION = 10
 
