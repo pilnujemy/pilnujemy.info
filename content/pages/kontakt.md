@@ -13,6 +13,8 @@ NIP: ```7831734441```
 
 Numer rachunku bankowego: ```91 9011 0005 3030 0057 2000 0016``` SWIFT: ```POLUPLPR```
 
+Numer rachunku BTC: ```1M56rZsmVMBwgjVtfwG44WqNSdTAB2QWTJ```
+
 Adres korespondencyjny:  
 > Fundacja Pilnujemy.info  
 > Święty Marcin 29/8  
