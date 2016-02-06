@@ -24,6 +24,7 @@ DISPLAY_CATEGORIES_ON_POST = False
 # Blogroll
 LINKS = (('Kontakt', '/pages/kontakt.html'),
          ('GitHub', 'https://github.com/pilnujemy'),
+         ('Facebook', 'https://www.facebook.com/PilnujemyInfo-887008381347417/'),
          ('O nas', '/pages/o-nas.html'),
          ('Aktualności', '/'),
          )
