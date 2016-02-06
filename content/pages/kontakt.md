@@ -16,7 +16,7 @@ Numer rachunku bankowego: ```91 9011 0005 3030 0057 2000 0016``` SWIFT: ```POLUP
 Numer rachunku BTC: ```1M56rZsmVMBwgjVtfwG44WqNSdTAB2QWTJ```
 
 Adres korespondencyjny:  
-> Fundacja Pilnujemy.info  
+> Fundacja Pilnujemy.Info  
 > Święty Marcin 29/8  
 > 61-806 Poznań
 
