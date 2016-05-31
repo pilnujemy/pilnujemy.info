@@ -14,6 +14,8 @@ TIMEZONE = 'Europe/Warsaw'
 DEFAULT_LANG = 'pl'
 LOCALE = ('pl_PL', 'pl_PL.UTF-8')
 
+GOOGLE_ANALYTICS = 'UA-78574556-1'
+
 # Feed generation is usually not desired when developing
 FEED_DOMAIN = SITEURL
 
