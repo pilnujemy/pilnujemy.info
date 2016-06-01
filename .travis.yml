@@ -16,7 +16,6 @@ addons:
   apt:
     packages:
     - nodejs
-    - gulp
     - npm
 
 install:
